@@ -3,35 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John Doe - Web Developer</title>
-  <meta name="description" content="I'm John Doe, a passionate web developer specializing in creating beautiful and functional websites. Get in touch with me at yourname@example.com.">
-  <style>
-    /* Your CSS styles here */
-  </style>
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header>
-    <h1>John Doe</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm a passionate web developer specializing in creating beautiful and functional websites. With a strong background in HTML, CSS, and JavaScript, I strive to deliver high-quality solutions to my clients.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Feel free to get in touch with me at <a href="mailto:yourname@example.com">yourname@example.com</a>. You can also connect with me on <a href="https://twitter.com/yourtwitter">Twitter</a> and <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a>.</p>
-    </section>
-  </main>
-
+  <div class="container">
+    <h1>Guess the Number</h1>
+    <p>Guess a number between 1 and 100:</p>
+    <input type="number" id="guessField">
+    <button onclick="checkGuess()">Submit Guess</button>
+    <p class="message" id="message"></p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

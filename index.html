@@ -3,56 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Homepage Replica</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Google Search Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="left-nav">
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-            </ul>
-            <ul class="right-nav">
-                <li><a href="#" class="sign-in">Sign in</a></li>
-                <li><a href="#">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Google_Account_Icon.svg/2048px-Google_Account_Icon.svg.png" alt="Apps">
-                </a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="container">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
-                 alt="Google Logo" class="logo">
-
-            <div class="search-container">
-                <input type="text" id="search-box">
-                <img src="https://www.google.com/logos/doodles/2023/lunar-new-year-2023-6753651837108374.2-s.png" alt="search icon" class="search-icon">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Google_Voice_Search_icon.svg/1200px-Google_Voice_Search_icon.svg.png" alt="voice search icon" class="voice-icon">
-            </div>
-
-            <div class="buttons">
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
-            </div>
+    <div class="container">
+        <div class="logo">
+            <img src="google-logo.png" alt="Google Logo">
         </div>
-    </main>
 
-    <footer>
-        <ul class="upper-links">
-              <li><a href="#">Advertising</a></li>
-              <li><a href="#">Business</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">How Search works</a></li>
-        </ul>
-        <ul class="lower-links">
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </footer>
+        <form class="search-form">
+            <input type="text" name="search" class="search-bar" placeholder="Search">
+            <div class="buttons">
+                <button type="submit">Google Search</button>
+                <button type="button">I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -1,15 +1,59 @@
+/* General Styles */ 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; 
+}
+
+a, .sign-in {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e8eaed;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.left-nav {
+  float: left;
+}
+
+.right-nav {
+  float: right;
+}
+
+.sign-in {
+ border: 1px solid #1a73e8;
+ border-radius: 5px;
+ padding: 8px 15px;
+ font-size: 14px;
+}
+
+/* Main Content */
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  padding-top: 50px;
 }
 
 .container {
-width: 50%;
-margin-top: 80px;
+  width: 580px; 
 }
 
 .logo {
@@ -20,26 +64,43 @@ margin-top: 80px;
 .search-container {
   border: 1px solid #dfe1e5;
   border-radius: 24px;
-  padding: 8px;
+  padding: 8px 16px;
   display: flex;
   align-items: center;
+  position: relative; /* To position icons within */
 }
 
 #search-box {
   border: none;
   outline: none;
   flex-grow: 1;
-  padding: 10px;
+  padding: 10px 0; /* Adjust top/bottom padding */
   font-size: 16px;
+}
+
+.search-icon, .voice-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+}
+
+.search-icon { 
+ position: absolute;
+ right: 30px;
+}
+
+.voice-icon {
+ position: absolute;
+ right: 60px;
 }
 
 .buttons {
   display: flex;
-  justify-content: space-around;
-  margin-left: 15px;
+  justify-content: center; /* Changed to center */
+  margin-top: 20px; 
 }
 
-button {
+button { 
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
   border-radius: 4px;
@@ -52,4 +113,26 @@ button {
 button:hover {
   border-color: #c6c6c6;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+background-color: #f2f2f2;
+padding: 20px;
+border-top: 1px solid #e8eaed;
+margin-top: 50px;
+text-align: center;
+font-size: 13px;
+color: #5f6368;
+}
+
+.upper-links, .lower-links {
+list-style: none;
+margin: 10px 0;
+padding: 0;
+}
+
+.upper-links li, .lower-links li{
+display: inline-block;
+margin: 0 15px;
 }
